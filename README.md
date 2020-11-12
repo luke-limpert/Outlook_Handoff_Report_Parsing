@@ -31,11 +31,11 @@ Comments
 From there i can use regex to get the information out of it 
 pertaining to the production target vs actual. 
 
-(?P<Line>[A-Za-z0-9]*)
-(?: )
-(?P<Stage>[A-Za-z]*)
-(?P<Target>\d{3})
-(?P<Actual>\d{1,3})
+(?P<Line>[A-Za-z0-9]*)  
+(?:\s)  
+(?P<Stage>[A-Za-z]*)  
+(?P<Target>\d{3})  
+(?P<Actual>\d{1,3})  
 
 Tried to make it a bit VERBOSE for readability. 
 
